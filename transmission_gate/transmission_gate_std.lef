@@ -1,0 +1,44 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO transmission_gate_std
+  CLASS BLOCK ;
+  FOREIGN transmission_gate_std ;
+  ORIGIN 0.445 1.960 ;
+  SIZE 1.040 BY 3.140 ;
+  PIN C
+    ANTENNAGATEAREA 0.097500 ;
+    PORT
+      LAYER li1 ;
+        RECT -0.010 -0.995 0.160 -0.665 ;
+    END
+  END C
+  PIN Cnot
+    ANTENNAGATEAREA 0.150000 ;
+    PORT
+      LAYER li1 ;
+        RECT -0.010 -0.495 0.160 -0.165 ;
+    END
+  END Cnot
+  PIN A
+    ANTENNADIFFAREA 0.437250 ;
+    PORT
+      LAYER li1 ;
+        RECT -0.350 0.000 -0.055 1.000 ;
+        RECT -0.350 -1.160 -0.180 0.000 ;
+        RECT -0.350 -1.850 -0.055 -1.160 ;
+    END
+  END A
+  PIN B
+    ANTENNADIFFAREA 0.440500 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.205 0.000 0.500 1.000 ;
+        RECT 0.330 -1.160 0.500 0.000 ;
+        RECT 0.205 -1.850 0.500 -1.160 ;
+    END
+  END B
+END transmission_gate_std
+END LIBRARY
+
