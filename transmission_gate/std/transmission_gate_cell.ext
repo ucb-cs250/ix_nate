@@ -17,14 +17,14 @@ node "Cnot" 543 133.626 -2 -83 pc 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "w_n89_n36#" 2223 169.728 -89 -36 nw 0 0 0 0 56576 960 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 cap "C" "A" 64.0588
-cap "Cnot" "A" 64.0588
-cap "Cnot" "w_n89_n36#" 0.0111
-cap "B" "A" 289.559
-cap "B" "w_n89_n36#" 4.2772
-cap "C" "Cnot" 66
-cap "C" "B" 64.0588
+cap "w_n89_n36#" "A" 4.2772
 cap "Cnot" "B" 64.0588
-cap "A" "w_n89_n36#" 4.2772
+cap "Cnot" "C" 66
+cap "C" "B" 64.0588
+cap "w_n89_n36#" "Cnot" 0.0111
+cap "w_n89_n36#" "B" 4.2772
+cap "Cnot" "A" 64.0588
+cap "A" "B" 289.559
 device msubckt sky130_fd_pr__nfet_01v8 0 -366 1 -365 l=30 w=130 "VSUBS" "C" 60 0 "A" 130 0 "B" 130 0
 device msubckt sky130_fd_pr__pfet_01v8 0 0 1 1 l=30 w=200 "w_n89_n36#" "Cnot" 60 0 "A" 200 0 "B" 200 0
 subcap "C" -24.617

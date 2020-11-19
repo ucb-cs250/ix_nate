@@ -2,9 +2,9 @@ VERSION 5.7 ;
   NOWIREEXTENSIONATPIN ON ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
-MACRO transmission_gate_std
+MACRO transmission_gate_cell
   CLASS BLOCK ;
-  FOREIGN transmission_gate_std ;
+  FOREIGN transmission_gate_cell ;
   ORIGIN 0.445 1.960 ;
   SIZE 1.040 BY 3.140 ;
   PIN C
@@ -39,6 +39,6 @@ MACRO transmission_gate_std
         RECT 0.205 -1.850 0.500 -1.160 ;
     END
   END B
-END transmission_gate_std
+END transmission_gate_cell
 END LIBRARY
 
