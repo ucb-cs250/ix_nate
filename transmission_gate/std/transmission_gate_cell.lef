@@ -3,10 +3,11 @@ VERSION 5.7 ;
   DIVIDERCHAR "/" ;
   BUSBITCHARS "[]" ;
 MACRO transmission_gate_cell
-  CLASS BLOCK ;
+  CLASS CORE ;
   FOREIGN transmission_gate_cell ;
   ORIGIN 0.445 1.960 ;
   SIZE 1.040 BY 3.140 ;
+  SITE unithd ;
   PIN C
     ANTENNAGATEAREA 0.097500 ;
     PORT
