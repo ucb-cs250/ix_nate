@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1606118665
+timestamp 1606194327
 << nwell >>
 rect -89 -36 119 236
 << nmos >>
@@ -68,15 +68,22 @@ rect -70 -370 -11 -354
 rect 41 -248 100 -232
 rect 75 -354 100 -248
 rect 41 -370 100 -354
+<< metal1 >>
+rect -94 150 124 246
+rect -94 -394 124 -298
 << labels >>
 rlabel polycont -2 -83 32 -49 1 Cnot
-port 2 n
+port 2 n signal input
 rlabel polycont -2 -183 32 -149 1 C
-port 1 n
+port 1 n signal input
 rlabel locali -70 -248 -36 16 1 A
-port 3 n
+port 3 n signal bidirectional
 rlabel locali 66 -248 100 16 1 B
-port 4 n
+port 4 n signal bidirectional
+rlabel metal1 -94 150 124 246 1 VPWR
+port 5 n power bidirectional abutment
+rlabel metal1 -94 -394 124 -298 1 VGND
+port 6 n ground bidirectional abutment
 << properties >>
 string LEFsite unithd
 string LEFclass CORE
