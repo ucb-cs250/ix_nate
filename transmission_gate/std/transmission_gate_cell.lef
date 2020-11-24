@@ -9,6 +9,8 @@ MACRO transmission_gate_cell
   SIZE 1.090 BY 3.200 ;
   SITE unithd ;
   PIN C
+    DIRECTION INPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 0.097500 ;
     PORT
       LAYER li1 ;
@@ -16,6 +18,8 @@ MACRO transmission_gate_cell
     END
   END C
   PIN Cnot
+    DIRECTION INPUT ;
+    USE SIGNAL ;
     ANTENNAGATEAREA 0.150000 ;
     PORT
       LAYER li1 ;
@@ -23,6 +27,8 @@ MACRO transmission_gate_cell
     END
   END Cnot
   PIN A
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     ANTENNADIFFAREA 0.437250 ;
     PORT
       LAYER li1 ;
@@ -32,6 +38,8 @@ MACRO transmission_gate_cell
     END
   END A
   PIN B
+    DIRECTION INOUT ;
+    USE SIGNAL ;
     ANTENNADIFFAREA 0.440500 ;
     PORT
       LAYER li1 ;
@@ -40,11 +48,24 @@ MACRO transmission_gate_cell
         RECT 0.205 -1.850 0.500 -1.160 ;
     END
   END B
-  OBS
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
       LAYER met1 ;
         RECT -0.470 0.750 0.620 1.230 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
         RECT -0.470 -1.970 0.620 -1.490 ;
-  END
+    END
+  END VGND
 END transmission_gate_cell
 END LIBRARY
 
