@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1605771998
+timestamp 1606118665
 << nwell >>
 rect -89 -36 119 236
 << nmos >>
@@ -77,4 +77,8 @@ rlabel locali -70 -248 -36 16 1 A
 port 3 n
 rlabel locali 66 -248 100 16 1 B
 port 4 n
+<< properties >>
+string LEFsite unithd
+string LEFclass CORE
+string LEFsource USER
 << end >>
