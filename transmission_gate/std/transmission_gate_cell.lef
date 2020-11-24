@@ -5,8 +5,8 @@ VERSION 5.7 ;
 MACRO transmission_gate_cell
   CLASS CORE ;
   FOREIGN transmission_gate_cell ;
-  ORIGIN 0.445 1.960 ;
-  SIZE 1.040 BY 3.140 ;
+  ORIGIN 0.470 1.970 ;
+  SIZE 1.090 BY 3.200 ;
   SITE unithd ;
   PIN C
     ANTENNAGATEAREA 0.097500 ;
@@ -40,6 +40,11 @@ MACRO transmission_gate_cell
         RECT 0.205 -1.850 0.500 -1.160 ;
     END
   END B
+  OBS
+      LAYER met1 ;
+        RECT -0.470 0.750 0.620 1.230 ;
+        RECT -0.470 -1.970 0.620 -1.490 ;
+  END
 END transmission_gate_cell
 END LIBRARY
 
