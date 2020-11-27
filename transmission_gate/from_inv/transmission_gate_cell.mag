@@ -1,11 +1,11 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1606263321
+timestamp 1606518816
 << nwell >>
-rect -38 261 315 584
+rect -60 261 332 584
 << pwell >>
-rect 11 -19 45 15
+rect 15 -17 49 17
 << scnmos >>
 rect 165 47 195 177
 << pmoshvt >>
@@ -18,13 +18,13 @@ rect 71 67 121 148
 rect 155 67 165 148
 rect 29 47 165 67
 rect 195 159 247 177
-rect 195 64 205 159
-rect 239 64 247 159
-rect 195 47 247 64
+rect 195 67 205 159
+rect 239 67 247 159
+rect 195 47 247 67
 << pdiff >>
-rect 29 480 81 497
-rect 29 383 37 480
-rect 71 383 81 480
+rect 29 477 81 497
+rect 29 383 37 477
+rect 71 383 81 477
 rect 29 349 81 383
 rect 29 315 37 349
 rect 71 315 81 349
@@ -41,9 +41,9 @@ rect 111 297 247 315
 << ndiffc >>
 rect 37 67 71 161
 rect 121 67 155 148
-rect 205 64 239 159
+rect 205 67 239 159
 << pdiffc >>
-rect 37 383 71 480
+rect 37 383 71 477
 rect 37 315 71 349
 rect 121 325 155 477
 rect 205 383 239 477
@@ -65,9 +65,8 @@ rect 165 21 195 47
 rect 67 215 101 249
 rect 175 225 209 259
 << locali >>
-rect 9 495 71 496
-rect -5 480 71 495
-rect -5 383 37 480
+rect -5 477 71 493
+rect -5 383 37 477
 rect -5 349 71 383
 rect -5 315 37 349
 rect -5 299 71 315
@@ -93,31 +92,30 @@ rect 71 67 121 148
 rect 155 67 164 148
 rect -5 51 164 67
 rect 205 159 277 175
-rect 239 64 277 159
-rect 205 49 277 64
-rect 205 48 276 49
+rect 239 67 277 159
+rect 205 51 277 67
 << metal1 >>
 rect 0 496 276 592
 rect 0 -48 276 48
 << labels >>
-rlabel nwell s 11 -19 45 15 1 VNB
 rlabel metal1 0 -48 276 48 1 VGND
 port 1 n ground bidirectional abutment
 rlabel metal1 18 530 52 564 1 VPB
 rlabel metal1 0 496 276 592 1 VPWR
 port 2 n ground bidirectional abutment
-rlabel locali -5 51 33 495 1 A
-port 3 n signal bidirectional
-rlabel locali 243 49 277 493 1 B
-port 4 n signal bidirectional
 rlabel polycont 67 215 101 249 1 Cnot
 port 5 n signal input
 rlabel polycont 175 225 209 259 1 C
 port 6 n signal input
+rlabel locali -5 51 33 493 1 A
+port 7 n signal bidirectional
+rlabel locali 243 51 277 493 1 B
+port 8 n signal bidirectional
+rlabel pwell s 15 -17 49 17 1 VNB
 << properties >>
 string LEFclass CORE
 string LEFsite unithd
-string FIXED_BBOX -5 0 282 544
+string FIXED_BBOX -22 0 294 544
 string LEFsymmetry X Y R90
 string LEFsource user
 << end >>
