@@ -5,8 +5,8 @@ VERSION 5.7 ;
 MACRO transmission_gate_cell
   CLASS CORE ;
   FOREIGN transmission_gate_cell ;
-  ORIGIN 0.025 0.000 ;
-  SIZE 1.435 BY 2.720 ;
+  ORIGIN 0.110 0.000 ;
+  SIZE 1.580 BY 2.720 ;
   SYMMETRY X Y R90 ;
   SITE unithd ;
   PIN VGND
@@ -27,30 +27,6 @@ MACRO transmission_gate_cell
         RECT 0.000 2.480 1.380 2.960 ;
     END
   END VPWR
-  PIN A
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    ANTENNADIFFAREA 0.702000 ;
-    PORT
-      LAYER li1 ;
-        RECT 0.045 2.475 0.355 2.480 ;
-        RECT -0.025 1.495 0.355 2.475 ;
-        RECT -0.025 0.820 0.165 1.495 ;
-        RECT -0.025 0.255 0.820 0.820 ;
-    END
-  END A
-  PIN B
-    DIRECTION INOUT ;
-    USE SIGNAL ;
-    ANTENNADIFFAREA 0.849000 ;
-    PORT
-      LAYER li1 ;
-        RECT 0.560 1.545 1.385 2.465 ;
-        RECT 1.215 0.875 1.385 1.545 ;
-        RECT 1.025 0.245 1.385 0.875 ;
-        RECT 1.025 0.240 1.380 0.245 ;
-    END
-  END B
   PIN Cnot
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -69,6 +45,28 @@ MACRO transmission_gate_cell
         RECT 0.875 1.045 1.045 1.375 ;
     END
   END C
+  PIN A
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.702000 ;
+    PORT
+      LAYER li1 ;
+        RECT -0.025 1.495 0.355 2.465 ;
+        RECT -0.025 0.820 0.165 1.495 ;
+        RECT -0.025 0.255 0.820 0.820 ;
+    END
+  END A
+  PIN B
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 0.849000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.560 1.545 1.385 2.465 ;
+        RECT 1.215 0.875 1.385 1.545 ;
+        RECT 1.025 0.255 1.385 0.875 ;
+    END
+  END B
 END transmission_gate_cell
 END LIBRARY
 
