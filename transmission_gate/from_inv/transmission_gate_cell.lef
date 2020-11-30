@@ -9,24 +9,6 @@ MACRO transmission_gate_cell
   SIZE 1.580 BY 2.720 ;
   SYMMETRY X Y R90 ;
   SITE unithd ;
-  PIN VGND
-    DIRECTION INOUT ;
-    USE GROUND ;
-    SHAPE ABUTMENT ;
-    PORT
-      LAYER met1 ;
-        RECT 0.000 -0.240 1.380 0.240 ;
-    END
-  END VGND
-  PIN VPWR
-    DIRECTION INOUT ;
-    USE GROUND ;
-    SHAPE ABUTMENT ;
-    PORT
-      LAYER met1 ;
-        RECT 0.000 2.480 1.380 2.960 ;
-    END
-  END VPWR
   PIN Cnot
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -59,7 +41,7 @@ MACRO transmission_gate_cell
   PIN B
     DIRECTION INOUT ;
     USE SIGNAL ;
-    ANTENNADIFFAREA 0.849000 ;
+    ANTENNADIFFAREA 0.852250 ;
     PORT
       LAYER li1 ;
         RECT 0.560 1.545 1.385 2.465 ;
@@ -67,6 +49,24 @@ MACRO transmission_gate_cell
         RECT 1.025 0.255 1.385 0.875 ;
     END
   END B
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT -0.110 2.480 1.470 2.960 ;
+    END
+  END VPWR
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER met1 ;
+        RECT -0.110 -0.240 1.470 0.240 ;
+    END
+  END VGND
 END transmission_gate_cell
 END LIBRARY
 
