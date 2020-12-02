@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1606722894
+timestamp 1606890316
 << nwell >>
 rect -60 261 332 582
 << pwell >>
@@ -15,25 +15,25 @@ rect 29 163 165 177
 rect 29 67 37 163
 rect 147 67 165 163
 rect 29 47 165 67
-rect 195 159 248 177
-rect 195 67 206 159
-rect 240 67 248 159
+rect 195 150 248 177
+rect 195 67 206 150
+rect 240 67 248 150
 rect 195 47 248 67
 << pdiff >>
-rect 29 477 81 497
-rect 29 315 37 477
-rect 71 315 81 477
-rect 29 297 81 315
+rect 27 477 81 497
+rect 27 315 36 477
+rect 70 315 81 477
+rect 27 297 81 315
 rect 111 477 247 497
-rect 111 325 121 477
+rect 111 325 122 477
 rect 239 325 247 477
 rect 111 297 247 325
 << ndiffc >>
 rect 37 67 147 163
-rect 206 67 240 159
+rect 206 67 240 150
 << pdiffc >>
-rect 37 315 71 477
-rect 121 325 239 477
+rect 36 315 70 477
+rect 122 325 239 477
 << poly >>
 rect 81 497 111 523
 rect 81 265 111 297
@@ -41,45 +41,44 @@ rect 51 249 117 265
 rect 51 215 67 249
 rect 101 215 117 249
 rect 51 199 117 215
-rect 159 259 225 275
-rect 159 225 175 259
-rect 209 225 225 259
-rect 159 209 225 225
-rect 165 177 195 209
+rect 159 250 225 266
+rect 159 216 175 250
+rect 209 216 225 250
+rect 159 200 225 216
+rect 165 177 195 200
 rect 165 21 195 47
 << polycont >>
 rect 67 215 101 249
-rect 175 225 209 259
+rect 175 216 209 250
 << locali >>
 rect -5 477 71 493
-rect -5 315 37 477
+rect -5 315 36 477
+rect 70 315 71 477
 rect -5 299 71 315
 rect 112 477 277 493
-rect 112 325 121 477
+rect 112 325 122 477
 rect 239 325 277 477
 rect 112 309 277 325
 rect -5 164 33 299
 rect 67 249 101 265
 rect 67 199 101 215
-rect 175 259 209 275
-rect 175 209 209 225
-rect 243 175 277 309
+rect 175 250 209 266
+rect 175 200 209 216
+rect 243 166 277 309
 rect -5 163 164 164
 rect -5 67 37 163
 rect 147 67 164 163
 rect -5 51 164 67
-rect 205 159 277 175
-rect 205 67 206 159
-rect 240 67 277 159
-rect 205 51 277 67
+rect 199 150 277 166
+rect 199 67 206 150
+rect 240 67 277 150
+rect 199 51 277 67
 << metal1 >>
 rect -22 496 294 592
 rect -22 -48 294 48
 << labels >>
 rlabel polycont 67 215 101 249 1 Cnot
 port 5 n signal input
-rlabel polycont 175 225 209 259 1 C
-port 6 n signal input
 rlabel locali -5 51 33 493 1 A
 port 7 n signal bidirectional
 rlabel locali 243 51 277 493 1 B
@@ -88,9 +87,11 @@ rlabel metal1 -22 496 294 592 1 VPWR
 port 9 n power bidirectional abutment
 rlabel metal1 -22 -48 294 48 1 VGND
 port 10 n ground bidirectional abutment
+rlabel polycont 175 216 209 250 1 C
+port 6 n signal input
 << properties >>
-string LEFclass CORE
 string LEFsite unithd
+string LEFclass CORE
 string FIXED_BBOX -22 0 294 544
 string LEFsymmetry X Y R90
 string LEFsource user
